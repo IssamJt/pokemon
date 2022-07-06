@@ -83,6 +83,54 @@ body .background .moi {
   height: 40%;
   position: relative;
 }
+body .background .moi .flamme {
+  background-image: url("../IMG/back/flamme.gif");
+  background-size: cover;
+  position: absolute;
+  height: 40vh;
+  width: 20vh;
+  left: 18%;
+  bottom: 40%;
+  animation: squaremove 2s 1 forwards;
+}
+@keyframes squaremove {
+  0% {
+    left: 18%;
+    bottom: 40%;
+  }
+  99% {
+    left: 67%;
+    bottom: 100%;
+    width: 25vh;
+  }
+  100% {
+    width: 0;
+  }
+}
+body .background .moi .eau {
+  background-image: url("../IMG/back/eau.gif");
+  background-size: cover;
+  position: absolute;
+  height: 40vh;
+  width: 20vh;
+  left: 18%;
+  bottom: 40%;
+  animation: squaremove 2s 1 forwards;
+}
+@keyframes squaremove {
+  0% {
+    left: 18%;
+    bottom: 40%;
+  }
+  99% {
+    left: 67%;
+    bottom: 100%;
+    width: 25vh;
+  }
+  100% {
+    width: 0;
+  }
+}
 body .background .moi .pokemoi {
   background-image: url("../IMG/back/dracofeu.gif");
   width: 27%;
@@ -272,6 +320,21 @@ body .background .text .partie2 {
   height: 90%;
   background-color: white;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 }
+body .background .text .partie2 .degat {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  margin-top: 5%;
+}
+body .background .text .partie2 .type {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  margin-top: 5%;
+}
+
 
 /*# sourceMappingURL=style.css.map */
